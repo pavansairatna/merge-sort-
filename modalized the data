@@ -1,0 +1,43 @@
+// Define a class to represent your data
+class Person {
+    private String name;
+    private int age;
+    
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // Getter and Setter methods
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public int getAge() {
+        return age;
+    }
+    
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+
+// Main class
+public class DataModelingExample {
+    public static void main(String[] args) {
+        // Create an instance of the Person class
+        Person person1 = new Person("John Doe", 25);
+        
+        // Access and modify the data using getter and setter methods
+        System.out.println("Name: " + person1.getName());
+        System.out.println("Age: " + person1.getAge());
+        
+        person1.setAge(26);
+        System.out.println("Updated Age: " + person1.getAge());
+    }
+}
